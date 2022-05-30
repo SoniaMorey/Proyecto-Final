@@ -1,0 +1,52 @@
+#container{
+    display: flex;
+    margin: 30px;
+    padding: 40px;
+
+}
+.flex-item1{
+    
+    margin: 20px 30px;
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: gray;
+
+}
+.flex-item1 label{
+    margin-top: 10px;
+}
+.flex-item1 input{
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+}
+.flex-item1 select{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+.flex-item1 textarea{
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.flex-item1 button{
+    font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    width: 80px;
+}
+.flex-item2{
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+label {
+    margin-right: 15px;
+    line-height: 40px;
+  }

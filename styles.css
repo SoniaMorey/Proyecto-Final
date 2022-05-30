@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lobster+Two:ital,wght@1,700&display=swap');
+
+*{
+   padding: 0;
+    margin:0;
+}
+body{
+    background:rgb(182, 238, 233);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(92, 225, 230);
+    width: 100vw;
+    height: 10vw;
+    margin-right: 0%;
+    color: beige;
+    font-family: 'Lobster Two', cursive ;
+    font-size: 8vw;
+    
+}
+
+.imagen1{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    height: 10vw;
+    width: auto;
+    
+
+}
+.imagen2{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    height: 10vw;
+    width: auto;
+
+}
+.nav-bar{
+    display: flex;
+    width: 100vw;
+}
+ .nav-list{
+     
+     height: 50px;
+     width:100vw;
+     display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content:space-around;
+     background-color:blue;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 1.5em;
+     
+ }
+    .nav-list li{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+   
+    align-content: center;
+    color: white;
+    background-color:blue;
+    
+  }
+ 
+  .nav-list li a{
+    background-color: blue;
+    color: white;
+  }
+  .nav-list li a:hover{
+      background-color: white;
+      color:blue;
+  }
+
+  .texto1{
+
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      background-color: rgb(223, 108, 32);
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 0.5cm 1cm 0.5cm 1cm;
+      margin:20px;
+      height: 5%;
+      width: 20%;
+      position: relative;
+      animation-name: movimiento;
+      animation-duration: 8s;
+
+  }
+
+  .texto2{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(235, 142, 21);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5cm 1cm 0.5cm 1cm;
+    margin: 20px 150px;
+    height: 5%;
+    width: 25%;
+    position: relative;
+    animation-name: movimiento2;
+    animation-duration: 8s;
+    
+  }
+
+.texto3{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(235, 142, 21);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5cm 1cm 0.5cm 1cm;
+    margin: 20px 300px;
+    height: 5%;
+    width:20%;
+    position: relative;
+    animation-name: movimiento3;
+    animation-duration: 8s;
+    
+  }
+  @media screen and (max-width:480px){
+  #carteles{
+    animation-name: none;
+    animation-duration: 0s;
+      margin:20px;
+
+  }
+      
+  }    
+    @keyframes movimiento {
+      from{left:1000px;}
+      to{left:0px;}
+  }
+  @keyframes movimiento2 {
+    from{left:1500px;}
+    to{left:150px;}
+}
+@keyframes movimiento3 {
+    from{left:2000px;}
+    to{left:300px;}
+}
+
+.mensaje img{
+    width: 100vw;
+    height:50vh;
+}
+
+.quienes-somos{
+    margin: 20px;
+    padding: 40px;
+}
+.quienes-somos h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    
+}
+.somos {
+    margin-top: 30PX;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8em;
+}
+
+.pie-pagina{
+    background-color: blue;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 0px;
+}
+.pie-pagina .grupo{
+    width: 100%;
+    
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3em;
+    padding: 30px 0px;
+    
+}
+.pie-pagina .grupo .box{
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo .box p{
+    color: rgb(182, 238, 233);
+    margin-top: 25px;
+    
+}
+
+.pie-pagina .grupo .box figure img{
+    height: 10vh;
+    width: 10vw;
+    align-items: center;
+    border-radius: 120px;
+}
+.pie-pagina .grupo .box h2{
+    color: rgb(182, 238, 233);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.pie-pagina .grupo .box .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    color: antiquewhite;
+    margin-right: 10px;
+    background-color: darkblue;
+    text-align: center;
+    transition: all 300ms ease;
+    
+}
+
+.pie-pagina .grupo .box .redsocial a:hover{
+    background-color: aqua;
+}
+
+.pie-pagina .grupo .box .redsocial i{
+    height: 90%;
+    width: 90%;
+}
+
+@media screen and (max-width: 480px){
+    header{
+        height: auto;
+    }
+    body{
+        width: auto;
+    }
+    .container-products {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(10, auto);
+}
+    .product{
+        float: left;
+    }
+}
