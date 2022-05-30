@@ -8,10 +8,10 @@
     
     margin: 20px 30px;
     padding: 20px;
-    width: 500px;
-    height: 600px;
+    width: 80%;
+    height: 90%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: justify;
     background-color: gray;
 
@@ -20,26 +20,26 @@
     margin-top: 10px;
 }
 .flex-item1 input{
-    width: 200px;
-    height: 30px;
+    width: 40%;
+    height: 6%;
     margin-left: 20px;
 }
 .flex-item1 select{
-    width: 100px;
-    height: 30px;
+    width: 30%;
+    height: 6%;
     margin-left: 20px;
 }
 .flex-item1 textarea{
     margin-left: 30px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .flex-item1 button{
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
-    height: 35px;
-    width: 80px;
+    height: 6%;
+    width: 20%;
 }
 .flex-item2{
     margin-top: 20px;
@@ -48,5 +48,5 @@
 }
 label {
     margin-right: 15px;
-    line-height: 40px;
+    line-height: 2em;
   }
