@@ -3,9 +3,11 @@
 *{
    padding: 0;
     margin:0;
+    
 }
 body{
     background:rgb(182, 238, 233);
+    
 }
 header{
     display: flex;
@@ -13,7 +15,6 @@ header{
     background-color: rgb(92, 225, 230);
     width: 100vw;
     height: 10vw;
-    margin-right: 0%;
     color: beige;
     font-family: 'Lobster Two', cursive ;
     font-size: 8vw;
@@ -41,19 +42,21 @@ header{
     display: flex;
     width: 100vw;
 }
+
  .nav-list{
-     
-     height: 50px;
-     width:100vw;
      display:flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
      justify-content:space-around;
+     height: 50px;
+     width:100%;
+     flex-direction: row;
+     flex-wrap: nowrap;   
      background-color:blue;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 1.5em;
      
  }
+
+
     .nav-list li{
     display: flex;
     flex-wrap: wrap;
@@ -73,19 +76,30 @@ header{
       background-color: white;
       color:blue;
   }
-
+  @media only screen and (max-width:600px){
+    .nav-list{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    height: 10vw;
+    font-size:4vw;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    }
+ }
+ 
   .texto1{
 
       color: white;
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center;
       background-color: rgb(223, 108, 32);
       border: 1px solid black;
       border-radius: 10px;
       padding: 0.5cm 1cm 0.5cm 1cm;
-      margin:20px;
-      height: 5%;
-      width: 20%;
+      margin:15px;
+      height:auto;
+      width: 15%;
       position: relative;
       animation-name: movimiento;
       animation-duration: 8s;
@@ -94,15 +108,15 @@ header{
 
   .texto2{
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     background-color: rgb(235, 142, 21);
     border: 1px solid black;
     border-radius: 10px;
     padding: 0.5cm 1cm 0.5cm 1cm;
-    margin: 20px 150px;
-    height: 5%;
-    width: 25%;
+    margin: 15px 200px;
+    height: auto;
+    width: 15%;
     position: relative;
     animation-name: movimiento2;
     animation-duration: 8s;
@@ -111,39 +125,49 @@ header{
 
 .texto3{
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     background-color: rgb(235, 142, 21);
     border: 1px solid black;
     border-radius: 10px;
     padding: 0.5cm 1cm 0.5cm 1cm;
-    margin: 20px 300px;
-    height: 5%;
-    width:20%;
+    margin: 15px 400px;
+    height: auto;
+    width:15%;
     position: relative;
     animation-name: movimiento3;
     animation-duration: 8s;
     
   }
-  @media screen and (max-width:480px){
-  #carteles{
+  @media screen and (max-width:600px){
+  .texto1, .texto2, .texto3{
     animation-name: none;
     animation-duration: 0s;
-      margin:20px;
-
-  }
-      
+    margin:10px;
+    font-size: 1em;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    text-align: center;
+ }
+     #carteles{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         margin: 2%;
+         height: auto;
+     } 
   }    
     @keyframes movimiento {
       from{left:1000px;}
       to{left:0px;}
   }
   @keyframes movimiento2 {
-    from{left:1500px;}
+    from{left:1100px;}
     to{left:150px;}
 }
 @keyframes movimiento3 {
-    from{left:2000px;}
+    from{left:1200px;}
     to{left:300px;}
 }
 
@@ -153,68 +177,91 @@ header{
 }
 
 .quienes-somos{
-    margin: 20px;
-    padding: 40px;
+    margin: 30px;
+    height: auto;
 }
 .quienes-somos h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.2em;
-    
+    margin-top: 2em;
 }
 .somos {
-    margin-top: 30PX;
+    margin: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8em;
 }
+@media screen and (max-width:600px){
+    .mensaje img{
+        height: auto;
+    }
+    .quienes-somos{
+        margin: 10px;
+        padding: 20px;
+    }
+    .quienes-somos h1{
+        font-size: 1.8em;
+    }
 
+    .somos{
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+}
 .pie-pagina{
     background-color: blue;
-    width: 100%;
-    height: 20vh;
+    width: 100vw;
+    height: 22vh;
     margin-bottom: 0px;
 }
 .pie-pagina .grupo{
-    width: 100%;
-    
-    margin: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 3em;
-    padding: 30px 0px;
-    
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 30%;
+    align-items: center;
 }
 .pie-pagina .grupo .box{
-    justify-content: center;
-    align-items: center;
+    width: 25vw;
+    justify-content: space-around;
+    column-gap: 30%;
+    flex: auto;
+    margin: 2vw;
 }
 .pie-pagina .grupo .box p{
     color: rgb(182, 238, 233);
-    margin-top: 25px;
-    
+    margin-left: 10%; 
 }
 
 .pie-pagina .grupo .box figure img{
-    height: 10vh;
-    width: 10vw;
-    align-items: center;
+    height: 11vh;
+    width: 11vw;
     border-radius: 120px;
+    margin-left: 10vw;
 }
 .pie-pagina .grupo .box h2{
     color: rgb(182, 238, 233);
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 1.2em;
+    margin-left: 8vw;
+}
+.pie-pagina .grupo .box .redsocial{
+    display: inline-block;
+    margin-left: 8vw;
 }
 .pie-pagina .grupo .box .redsocial a{
-    display: inline-block;
+    
     text-decoration: none;
     width: 3em;
     height: 3em;
     line-height: 3em;
     color: antiquewhite;
-    margin-right: 10px;
     background-color: darkblue;
+    padding: 0.5em;
     text-align: center;
     transition: all 300ms ease;
+    font-size: 1.2em;
     
 }
 
@@ -222,23 +269,21 @@ header{
     background-color: aqua;
 }
 
-.pie-pagina .grupo .box .redsocial i{
-    height: 90%;
-    width: 90%;
-}
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     header{
         height: auto;
     }
-    body{
-        width: auto;
+   
+    .pie-pagina{
+        height: auto;
     }
-    .container-products {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(10, auto);
-}
-    .product{
-        float: left;
+    .pie-pagina .grupo .box figure img{
+        margin-top: 2em;
     }
+    .pie-pagina .grupo .box h2{
+        font-size: 0.8em;
+       margin-left: 6vw;
+    }
+    
 }
