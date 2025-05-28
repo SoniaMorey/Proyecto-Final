@@ -25,21 +25,27 @@
     <div class="flex-item1">
         <h1><u>Formulario de contacto</u></h1> <br>
   
-    <label>NOMBRE COMPLETO: <input  type="text" ></label><br>
-    <label>TELEFONO:<input type="tel" ></label><br>
-    <label>CORREO:<input type="email"></label> <br>
-    <label>Horario de preferencia de contacto <select name="horario">
-        <option>9 a 13 hs</option>
-        <option>13 a 18 hs</option>
-        <option value="">9 a 18hs</option>
-    </select></label>
-    <label>
-    <p>Si tienes dudas, consultas o reclamos :</p>
-    <textarea name="comentario" rows="10" cols="30" placeholder="Escribe aqui..."></textarea>
-    </label>
-    <br>
-    <button type="submit">Enviar</button>
-    
+        <label for="nombre">NOMBRE COMPLETO: </label>
+        <input  type="text" name="nombre" id="nombre">
+        <br>
+        <label for="tel">TELEFONO:</label>
+        <input type="tel" name="tel" id="tel">
+        <br>
+        <label for="correo" >CORREO:</label>
+        <input type="email" name="correo" id="correo" required>
+        <br>
+        <label>Horario de preferencia de contacto <select name="horario">
+            <option>9 a 13 hs</option>
+            <option>13 a 18 hs</option>
+            <option value="">9 a 18hs</option>
+        </select></label>
+        <label>
+        <p>Si tienes dudas, consultas o reclamos :</p>
+        <textarea name="comentario" rows="10" cols="30" placeholder="Escribe aqui..." required></textarea>
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+        
 </div>
 </form>
 <aside class="flex-item2">
@@ -51,7 +57,7 @@
 <footer class="pie-pagina">
     <div class="grupo">
         <div class="box">
-            <p>Copyright @2022 | Diseño Web realizado por Sonia Moreyra</p>
+            <p>Copyright @2025 | Diseño Web realizado por Sonia Moreyra</p>
         </div>
         <div class="box">
             <figure>

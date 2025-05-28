@@ -12,7 +12,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(92, 225, 230);
+    background-color: rgb(97, 115, 229);
     width: 100vw;
     height: 10vw;
     color: beige;
@@ -56,7 +56,6 @@ header{
      
  }
 
-
     .nav-list li{
     display: flex;
     flex-wrap: wrap;
@@ -88,89 +87,7 @@ header{
     }
  }
  
-  .texto1{
-
-      color: white;
-      font-size: 1.5em;
-      text-align: center;
-      background-color: rgb(223, 108, 32);
-      border: 1px solid black;
-      border-radius: 10px;
-      padding: 0.5cm 1cm 0.5cm 1cm;
-      margin:15px;
-      height:auto;
-      width: 15%;
-      position: relative;
-      animation-name: movimiento;
-      animation-duration: 8s;
-
-  }
-
-  .texto2{
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(235, 142, 21);
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 0.5cm 1cm 0.5cm 1cm;
-    margin: 15px 200px;
-    height: auto;
-    width: 15%;
-    position: relative;
-    animation-name: movimiento2;
-    animation-duration: 8s;
-    
-  }
-
-.texto3{
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(235, 142, 21);
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 0.5cm 1cm 0.5cm 1cm;
-    margin: 15px 400px;
-    height: auto;
-    width:15%;
-    position: relative;
-    animation-name: movimiento3;
-    animation-duration: 8s;
-    
-  }
-  @media screen and (max-width:600px){
-  .texto1, .texto2, .texto3{
-    animation-name: none;
-    animation-duration: 0s;
-    margin:10px;
-    font-size: 1em;
-    width: auto;
-    height: auto;
-    padding: 1em;
-    text-align: center;
- }
-     #carteles{
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         margin: 2%;
-         height: auto;
-     } 
-  }    
-    @keyframes movimiento {
-      from{left:1000px;}
-      to{left:0px;}
-  }
-  @keyframes movimiento2 {
-    from{left:1100px;}
-    to{left:150px;}
-}
-@keyframes movimiento3 {
-    from{left:1200px;}
-    to{left:300px;}
-}
-
+   
 .mensaje img{
     width: 100vw;
     height:50vh;
@@ -214,58 +131,54 @@ header{
     height: 22vh;
     margin-bottom: 0px;
 }
-.pie-pagina .grupo{
+ .grupo{
     width: 100%; 
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: nowrap;
     margin-top: 30%;
-    align-items: center;
+
 }
-.pie-pagina .grupo .box{
+ .box{
     width: 25vw;
-    justify-content: space-around;
-    column-gap: 30%;
-    flex: auto;
+    column-gap: 30%;  
     margin: 2vw;
 }
-.pie-pagina .grupo .box p{
+ .box p{
     color: rgb(182, 238, 233);
     margin-left: 10%; 
 }
 
-.pie-pagina .grupo .box figure img{
+.box figure img{
     height: 11vh;
     width: 11vw;
     border-radius: 120px;
     margin-left: 10vw;
 }
-.pie-pagina .grupo .box h2{
+ .box h2{
     color: rgb(182, 238, 233);
     margin-bottom: 10px;
     font-size: 1.2em;
     margin-left: 8vw;
 }
-.pie-pagina .grupo .box .redsocial{
-    display: inline-block;
+.redsocial{
     margin-left: 8vw;
 }
-.pie-pagina .grupo .box .redsocial a{
+ .redsocial a{
     
     text-decoration: none;
-    width: 3em;
+    width: 3.5em;
     height: 3em;
     line-height: 3em;
     color: antiquewhite;
     background-color: darkblue;
     padding: 0.5em;
     text-align: center;
-    transition: all 300ms ease;
     font-size: 1.2em;
     
 }
 
-.pie-pagina .grupo .box .redsocial a:hover{
+ .redsocial a:hover{
     background-color: aqua;
 }
 
@@ -278,10 +191,10 @@ header{
     .pie-pagina{
         height: auto;
     }
-    .pie-pagina .grupo .box figure img{
+    .box figure img{
         margin-top: 2em;
     }
-    .pie-pagina .grupo .box h2{
+     .box h2{
         font-size: 0.8em;
        margin-left: 6vw;
     }

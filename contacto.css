@@ -31,7 +31,7 @@
     line-height: 2em;
 }
 .flex-item1 input{
-    width: 25vw;
+    width: 20vw;
     height: 1.5em;
     margin-left: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -58,7 +58,6 @@
 }
 .flex-item2{
     align-items: flex-start;
-  
     width:40vw;
     height: auto;
 }
