@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="carrito.css">
     <script src="https://kit.fontawesome.com/4dd6391c29.js" crossorigin="anonymous"></script>
     <title>Mr clean</title>
 </head>
@@ -20,8 +21,8 @@
     <nav class="nav-bar">
         <ul class="nav-list">
             <li class="volver">
-                <a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i>
-                <span>Volver</span></a>
+                <a href="productos.html"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <span>Volver a productos</span></a>
             </li>
             <li class="cart-container">
                 <a href="carrito.html" class="carrito-icono">
@@ -30,13 +31,18 @@
             </li>
         </ul>
     </nav>
-    <h1>Nuestros productos:</h1>
-    <section id="container-products">
-        
+    <h1 class="titulo-carrito">Carrito de compras:</h1>
+    <section id="contenedor-carrito">
+        <!-- Productos del carrito -->
     </section>
-    <div>
-        
+    <div id="acciones-carrito">
+        <!-- Botones de eliminar y finalizar compra -->
     </div>
+    
+    <section id="resumen-carrito">
+        <!-- Aca ira el resumen del carrito -->
+    </section>
+
 
     </main>
 </body>
@@ -62,5 +68,6 @@
     
     </div>
 </footer>
-<script src="app.js"></script>
+<script src="carrito.js"></script>
+
 </html>
